@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh Foods Loyalty - Sign-Up</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Banner and Navigation -->
+    <header>
+        <div class="banner-container">
+            <img src="images/banner.jpg" alt="Fresh Foods Banner" class="banner">
+            <!-- Black overlay -->
+            <div class="banner-overlay"></div>
+            <!-- Text overlay -->
+            <div class="banner-text">
+                <h1>Fresh Foods Loyalty Plan</h1>
+                <p>Earn rewards with every purchase</p>
+            </div>
+        </div>    
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="signup.html">Sign Up</a></li>
+                <li><a href="support.html">Support</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sign-up Form -->
+    <main class="container">
+        <section id="signup">
+            <h2>Sign Up for the Fresh Foods Loyalty Program</h2>
+            <p>To sign up, fill out the form below and start enjoying your rewards!</p>
+            <form id="signupForm" onsubmit="return submitForm(event)">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+                <label for="monthly-spend">Estimated Monthly Spend:</label>
+                <select id="monthly-spend" name="monthlySpend" required>
+                    <option value="">Select your range</option>
+                    <option value="$100-$199">$100 - $199</option>
+                    <option value="$200-$499">$200 - $499</option>
+                    <option value="$500-$999">$500 - $999</option>
+                    <option value="$1000 and above">$1000 and above</option>
+                </select>
+
+                <button type="submit">Sign Up</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Fresh Foods Loyalty Plan. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
